@@ -1,0 +1,230 @@
+{
+  "metadata": {
+    "generated_on": "2026-11-03",
+    "source_root": "Informe final ORAS-CONHU",
+    "privacy": "El tablero publica solo datos agregados. Los identificadores personales permanecen en la base interna.",
+    "total_reported_attendance": 1442,
+    "events_count": 11,
+    "activities_count": 7,
+    "identified_people": 123,
+    "named_source_records": 255,
+    "repeat_identified_people": 66,
+    "alerts_count": 7
+  },
+  "activities": [
+    {
+      "label": "Presentación del PAEDS",
+      "value": 524
+    },
+    {
+      "label": "Webinar Uniendo puentes contra el estigma",
+      "value": 411
+    },
+    {
+      "label": "Webinar sobre implementación del PAEDS",
+      "value": 302
+    },
+    {
+      "label": "Capacitación sobre estigma, discriminación y datos",
+      "value": 122
+    },
+    {
+      "label": "Hoja de ruta del PAEDS",
+      "value": 52
+    },
+    {
+      "label": "Taller de incidencia comunitaria",
+      "value": 17
+    },
+    {
+      "label": "Sesiones de diálogo técnico",
+      "value": 14
+    }
+  ],
+  "modalities": [
+    {
+      "label": "Virtual",
+      "value": 713
+    },
+    {
+      "label": "Híbrida",
+      "value": 576
+    },
+    {
+      "label": "Presencial",
+      "value": 153
+    }
+  ],
+  "sectors": [
+    {
+      "label": "Sector público",
+      "value": 56
+    },
+    {
+      "label": "Otras entidades",
+      "value": 24
+    },
+    {
+      "label": "Organizaciones comunitarias y sociedad civil",
+      "value": 22
+    },
+    {
+      "label": "Cooperación y equipo implementador",
+      "value": 21
+    }
+  ],
+  "events": [
+    {
+      "event_id": "ORAS-2026-PAEDS-PRESENTACION",
+      "activity": "Presentación del PAEDS",
+      "event_name": "Presentación oficial del PAEDS",
+      "event_date": "2026-04-16",
+      "modality": "Híbrida",
+      "location": "Lima y plataformas digitales",
+      "reported_attendance": 524,
+      "identified_listed": 32,
+      "counting_basis": "32 presenciales, 49 por Zoom y 443 asistentes en directo reportados en el informe.",
+      "source_file": "Anexo 1. Informe presentación del PAEDS/1_Informe_Presentación Oficial del PAEDS_16_Abril_2026.docx",
+      "note": "El archivo de evaluación en directo contiene 453 respuestas, diez más que las 443 reportadas en el informe."
+    },
+    {
+      "event_id": "ORAS-2026-HOJA-RUTA-0219",
+      "activity": "Hoja de ruta del PAEDS",
+      "event_name": "Reunión para la elaboración de la hoja de ruta",
+      "event_date": "2026-02-19",
+      "modality": "Híbrida",
+      "location": "Hotel Ikonik, Lima",
+      "reported_attendance": 20,
+      "identified_listed": 20,
+      "counting_basis": "Filas nominales con número de participante.",
+      "source_file": "Anexo 2. Hoja de ruta e informe de monitoreo PAEDS/Lista de participantes Reunión 20260219.xlsx",
+      "note": ""
+    },
+    {
+      "event_id": "ORAS-2026-HOJA-RUTA-0223",
+      "activity": "Hoja de ruta del PAEDS",
+      "event_name": "Reunión para la elaboración de la hoja de ruta",
+      "event_date": "2026-02-23",
+      "modality": "Híbrida",
+      "location": "Hotel Ikonik, Lima",
+      "reported_attendance": 12,
+      "identified_listed": 12,
+      "counting_basis": "Filas nominales con número de participante.",
+      "source_file": "Anexo 2. Hoja de ruta e informe de monitoreo PAEDS/Lista de participantes Reunión 20260223.xlsx",
+      "note": ""
+    },
+    {
+      "event_id": "ORAS-2026-HOJA-RUTA-0320",
+      "activity": "Hoja de ruta del PAEDS",
+      "event_name": "Reunión para la elaboración de la hoja de ruta",
+      "event_date": "2026-03-20",
+      "modality": "Híbrida",
+      "location": "CENEX Rector del Ministerio de Salud, Lima",
+      "reported_attendance": 20,
+      "identified_listed": 20,
+      "counting_basis": "Filas nominales con número de participante.",
+      "source_file": "Anexo 2. Hoja de ruta e informe de monitoreo PAEDS/Lista de participantes Reunión 20260320.xlsx",
+      "note": ""
+    },
+    {
+      "event_id": "ORAS-2026-CAPACITACION-0330",
+      "activity": "Capacitación sobre estigma, discriminación y datos",
+      "event_name": "Capacitación - jornada 1",
+      "event_date": "2026-03-30",
+      "modality": "Presencial",
+      "location": "Hotel Ikonik, Lima",
+      "reported_attendance": 41,
+      "identified_listed": 41,
+      "counting_basis": "Filas nominales con número de participante.",
+      "source_file": "Anexo 3. Capacitación uso de datos para la mejora de políticas y servicios de salud/Anexo 1 Lista_Participantes_Capacitación_20260330.xlsx",
+      "note": ""
+    },
+    {
+      "event_id": "ORAS-2026-CAPACITACION-0331",
+      "activity": "Capacitación sobre estigma, discriminación y datos",
+      "event_name": "Capacitación - jornada 2",
+      "event_date": "2026-03-31",
+      "modality": "Presencial",
+      "location": "Hotel Ikonik, Lima",
+      "reported_attendance": 43,
+      "identified_listed": 43,
+      "counting_basis": "Filas nominales con número de participante.",
+      "source_file": "Anexo 3. Capacitación uso de datos para la mejora de políticas y servicios de salud/Anexo 2 Lista_Participantes_Capacitación_20260331.xlsx",
+      "note": ""
+    },
+    {
+      "event_id": "ORAS-2026-CAPACITACION-0401",
+      "activity": "Capacitación sobre estigma, discriminación y datos",
+      "event_name": "Capacitación - jornada 3",
+      "event_date": "2026-04-01",
+      "modality": "Presencial",
+      "location": "Hotel Ikonik, Lima",
+      "reported_attendance": 38,
+      "identified_listed": 38,
+      "counting_basis": "Filas nominales con número de participante.",
+      "source_file": "Anexo 3. Capacitación uso de datos para la mejora de políticas y servicios de salud/Anexo 3 Lista_Participantes_Capacitación_20260401.xlsx",
+      "note": ""
+    },
+    {
+      "event_id": "ORAS-2026-DIALOGO-0309-0310",
+      "activity": "Sesiones de diálogo técnico",
+      "event_name": "Perspectivas, brechas y monitoreo para la implementación del PAEDS",
+      "event_date": "2026-03-09",
+      "modality": "Presencial",
+      "location": "Lima",
+      "reported_attendance": 14,
+      "identified_listed": 14,
+      "counting_basis": "Catorce filas en el registro firmado de dos jornadas.",
+      "source_file": "Anexo 4. Espacios de diálogo técnico, sistematización, inf de monitoreo/Espacios de diálogo/Anexo 2 Registro de asistencia Sesiones de Diálogo.pdf",
+      "note": "Dos nombres aparecen repetidos en filas separadas; se conservan las filas y se señalan para revisión."
+    },
+    {
+      "event_id": "ORAS-2026-WEBINAR-0409",
+      "activity": "Webinar Uniendo puentes contra el estigma",
+      "event_name": "Webinar Uniendo puentes contra el estigma del VIH",
+      "event_date": "2026-04-09",
+      "modality": "Virtual",
+      "location": "Facebook Live y YouTube",
+      "reported_attendance": 411,
+      "identified_listed": 0,
+      "counting_basis": "Respuestas anónimas del formulario de evaluación; el informe las reporta como asistentes.",
+      "source_file": "Anexo 5. Webinar uniendo puentes contra el estigma/Participantes y evaluación de webinar 9 abril (1-411).xlsx",
+      "note": "Los registros no incluyen nombre ni identificador personal; no pueden deduplicarse con otros eventos."
+    },
+    {
+      "event_id": "ORAS-2026-TALLER-INCIDENCIA-0717",
+      "activity": "Taller de incidencia comunitaria",
+      "event_name": "Taller de incidencia comunitaria para la implementación del PAEDS",
+      "event_date": "2026-07-17",
+      "modality": "Presencial",
+      "location": "Hotel Carrera, Lima",
+      "reported_attendance": 17,
+      "identified_listed": 35,
+      "counting_basis": "El informe confirma 17 firmas visibles; la lista contiene 35 nombres impresos y dos filas manuscritas.",
+      "source_file": "Anexo 6. Taller de incidencia comunitaria PAEDS/Presentaciones/Anexo 4_Lista de asistencia Taller incidencia comunitaria_17.7.26.pdf",
+      "note": "Los nombres listados sin firma no se suman como asistencia confirmada."
+    },
+    {
+      "event_id": "ORAS-2026-WEBINAR-0917",
+      "activity": "Webinar sobre implementación del PAEDS",
+      "event_name": "Fortaleciendo la implementación del PAEDS",
+      "event_date": "2026-09-17",
+      "modality": "Virtual",
+      "location": "Plataformas digitales del ORAS-CONHU",
+      "reported_attendance": 302,
+      "identified_listed": 0,
+      "counting_basis": "Participantes en directo que respondieron la encuesta durante el webinar.",
+      "source_file": "Anexo 10. Webinar fortaleciendo la implementación del PAEDS/Informe de webinar_17.9.26.docx",
+      "note": "El informe no contiene el anexo nominal anunciado; el total se conserva como agregado."
+    }
+  ],
+  "quality_notes": [
+    "El archivo de evaluación en directo contiene 453 respuestas, diez más que las 443 reportadas en el informe.",
+    "Dos nombres aparecen repetidos en filas separadas; se conservan las filas y se señalan para revisión.",
+    "Los registros no incluyen nombre ni identificador personal; no pueden deduplicarse con otros eventos.",
+    "Los nombres listados sin firma no se suman como asistencia confirmada.",
+    "El informe no contiene el anexo nominal anunciado; el total se conserva como agregado.",
+    "Emilio Olortegui Arango aparece 2 veces en el mismo evento.",
+    "Miguel Morales aparece 2 veces en el mismo evento."
+  ]
+}
