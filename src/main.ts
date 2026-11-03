@@ -67,9 +67,10 @@ function escapeHtml(value: string | number): string {
 
 function renderBars(rows: MetricRow[], tone = "green"): string {
   const max = Math.max(...rows.map((row) => row.value), 1);
+  const total = rows.reduce((sum, row) => sum + row.value, 0);
   return `<div class="bar-list">${rows.map((row) => `
     <div class="bar-row">
-      <div class="bar-label"><span>${escapeHtml(row.label)}</span><strong>${number.format(row.value)}</strong></div>
+      <div class="bar-label"><span>${escapeHtml(row.label)}</span><strong>${number.format(row.value)} <small>(${total ? ((row.value / total) * 100).toFixed(1) : "0.0"}%)</small></strong></div>
       <div class="bar-track"><div class="bar-fill ${tone}" style="width:${(row.value / max) * 100}%"></div></div>
     </div>`).join("")}</div>`;
 }
@@ -91,15 +92,12 @@ function eventRows(): string {
 }
 
 function renderPanorama(): string {
-  const virtual = data.modalities.find((row) => row.label === "Virtual")?.value ?? 0;
-  const percentVirtual = (virtual / data.metadata.total_verified_attendance) * 100;
   return `
     <section class="section-heading"><div><p class="eyebrow">Panorama general</p><h2>Registros verificables por actividad</h2></div><p>Las cifras se sustentan en listas, firmas o respuestas individuales disponibles.</p></section>
     <div class="two-column">
       <article class="panel"><div class="panel-title"><div><h3>Participaciones por línea de actividad</h3><p>Una persona puede aparecer en varias sesiones.</p></div></div>${renderBars(data.activities)}</article>
       <article class="panel"><div class="panel-title"><div><h3>Modalidad de los eventos</h3><p>La modalidad se asigna al evento completo.</p></div></div>${renderBars(data.modalities, "purple")}</article>
     </div>
-    <article class="finding"><span>Lectura</span><p>Los eventos clasificados como virtuales reúnen <strong>${percentVirtual.toFixed(1)}%</strong> de los registros verificables. La presentación oficial está clasificada como híbrida e incluye 453 respuestas obtenidas durante la transmisión.</p></article>
     <div class="two-column lower-grid">
       <article class="panel"><div class="panel-title"><div><h3>Personas identificadas o listadas por sector</h3><p>Distribución de ${number.format(data.metadata.identified_people)} personas presentes en fuentes nominales; su asistencia individual no siempre pudo confirmarse.</p></div></div>${renderBars(data.sectors, "gold")}</article>
       <article class="panel"><div class="panel-title"><div><h3>Participación reiterada</h3><p>Personas identificadas en más de una actividad o jornada.</p></div></div><div class="repeat-stat"><strong>${number.format(data.metadata.repeat_identified_people)}</strong><span>de ${number.format(data.metadata.identified_people)} personas identificadas</span><b>${((data.metadata.repeat_identified_people / data.metadata.identified_people) * 100).toFixed(1)}%</b></div></article>
@@ -123,8 +121,7 @@ function renderQuality(): string {
       <article class="definition-card"><h3>Filas fuente conservadas</h3><strong>${number.format(data.metadata.total_source_rows)}</strong><p>Incluyen 35 personas listadas en el taller; solo se confirmaron 17 firmas y no fue posible vincularlas individualmente.</p></article>
       <article class="definition-card"><h3>Participaciones declaradas</h3><strong>${number.format(data.metadata.total_reported_attendance)}</strong><p>Total obtenido al sumar las cifras narradas en los informes, aunque no todas cuentan con registros individuales.</p></article>
     </div>
-    <article class="panel notes-panel"><div class="panel-title"><div><h3>Alertas para validación</h3><p>Estas diferencias permanecen documentadas en la base interna.</p></div></div><ol>${data.quality_notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("")}</ol></article>
-    <article class="finding"><span>Uso recomendado</span><p>Para reportar resultados sustentados en registros, utilice las <strong>${number.format(data.metadata.total_verified_attendance)} participaciones verificables</strong>. Mantenga las <strong>${number.format(data.metadata.total_reported_attendance)} participaciones declaradas</strong> como una cifra separada y sujeta a validación documental.</p></article>`;
+    <article class="panel notes-panel"><div class="panel-title"><div><h3>Alertas para validación</h3><p>Estas diferencias permanecen documentadas en la base interna.</p></div></div><ol>${data.quality_notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("")}</ol></article>`;
 }
 
 function render(): void {
